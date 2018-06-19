@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sharding-core/sharding-core.iml" filepath="$PROJECT_DIR$/sharding-core/sharding-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharding-jdbc/sharding-jdbc.iml" filepath="$PROJECT_DIR$/sharding-jdbc/sharding-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharding-jdbc-spring/sharding-jdbc-spring.iml" filepath="$PROJECT_DIR$/sharding-jdbc-spring/sharding-jdbc-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharding-jdbc-spring/sharding-jdbc-spring-boot-starter/sharding-jdbc-spring-boot-starter.iml" filepath="$PROJECT_DIR$/sharding-jdbc-spring/sharding-jdbc-spring-boot-starter/sharding-jdbc-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharding-jdbc-spring/sharding-jdbc-spring-namespace/sharding-jdbc-spring-namespace.iml" filepath="$PROJECT_DIR$/sharding-jdbc-spring/sharding-jdbc-spring-namespace/sharding-jdbc-spring-namespace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharding-sphere.iml" filepath="$PROJECT_DIR$/sharding-sphere.iml" />
+    </modules>
+  </component>
+</project>

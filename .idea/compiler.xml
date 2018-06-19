@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sharding-core" />
+        <module name="sharding-jdbc" />
+        <module name="sharding-jdbc-spring-boot-starter" />
+        <module name="sharding-jdbc-spring-namespace" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sharding-core" target="1.7" />
+      <module name="sharding-jdbc" target="1.7" />
+      <module name="sharding-jdbc-orchestration" target="1.7" />
+      <module name="sharding-jdbc-orchestration-spring" target="1.5" />
+      <module name="sharding-jdbc-orchestration-spring-boot-starter" target="1.7" />
+      <module name="sharding-jdbc-orchestration-spring-namespace" target="1.7" />
+      <module name="sharding-jdbc-spring" target="1.5" />
+      <module name="sharding-jdbc-spring-boot-starter" target="1.7" />
+      <module name="sharding-jdbc-spring-namespace" target="1.7" />
+      <module name="sharding-jdbc-transaction" target="1.7" />
+      <module name="sharding-jdbc-transaction-async-job" target="1.7" />
+      <module name="sharding-jdbc-transaction-parent" target="1.5" />
+      <module name="sharding-jdbc-transaction-storage" target="1.7" />
+      <module name="sharding-opentracing" target="1.7" />
+      <module name="sharding-proxy" target="1.7" />
+      <module name="sharding-sphere" target="1.5" />
+      <module name="sharding-sql-test" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
