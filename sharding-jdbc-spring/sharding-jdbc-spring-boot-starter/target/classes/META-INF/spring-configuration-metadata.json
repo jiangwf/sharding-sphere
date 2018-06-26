@@ -1,0 +1,298 @@
+{
+  "hints": [
+    {
+      "name": "sharding.jdbc.datasource.keys"
+    },
+    {
+      "name": "sharding.jdbc.datasource.values",
+      "providers": [
+        {
+          "name": "any"
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.masterslave",
+      "type": "io.shardingsphere.jdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.sharding",
+      "type": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy",
+      "type": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlComplexShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.complex",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlComplexShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlHintShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.hint",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlHintShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlInlineShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.inline",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlInlineShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.standard",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy",
+      "type": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlComplexShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.complex",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlComplexShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlHintShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.hint",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlHintShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlInlineShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.inline",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlInlineShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.standard",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration"
+    },
+    {
+      "name": "sharding.jdbc.datasource",
+      "type": "io.shardingsphere.jdbc.spring.boot.SpringBootConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.masterslave.config-map",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.masterslave.load-balance-algorithm-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.masterslave.load-balance-algorithm-type",
+      "type": "io.shardingsphere.core.api.algorithm.masterslave.MasterSlaveLoadBalanceAlgorithmType"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.masterslave.master-data-source-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.masterslave.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.masterslave.slave-data-source-names",
+      "type": "java.util.Collection<java.lang.String>"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.sharding.binding-tables",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.sharding.config-map",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.sharding.default-data-source-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy",
+      "type": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.complex",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlComplexShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlComplexShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.complex.algorithm-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlComplexShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.complex.sharding-columns",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.hint",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlHintShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlHintShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.hint.algorithm-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.inline",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlInlineShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlInlineShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.inline.algorithm-expression",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlInlineShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.inline.sharding-column",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.none",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlNoneShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.standard",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.standard.precise-algorithm-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.standard.range-algorithm-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-database-strategy.standard.sharding-column",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.sharding.default-key-generator-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy",
+      "type": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.complex",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlComplexShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlComplexShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.complex.algorithm-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlComplexShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.complex.sharding-columns",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.hint",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlHintShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlHintShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.hint.algorithm-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.inline",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlInlineShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlInlineShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.inline.algorithm-expression",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlInlineShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.inline.sharding-column",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.none",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlNoneShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.YamlShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.standard",
+      "type": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.standard.precise-algorithm-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.standard.range-algorithm-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.yaml.sharding.strategy.YamlStandardShardingStrategyConfiguration",
+      "name": "sharding.jdbc.config.sharding.default-table-strategy.standard.sharding-column",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.sharding.master-slave-rules",
+      "type": "java.util.Map<java.lang.String,io.shardingsphere.core.yaml.masterslave.YamlMasterSlaveRuleConfiguration>"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.sharding.props",
+      "type": "java.util.Properties"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties",
+      "name": "sharding.jdbc.config.sharding.tables",
+      "type": "java.util.Map<java.lang.String,io.shardingsphere.core.yaml.sharding.YamlTableRuleConfiguration>"
+    },
+    {
+      "sourceType": "io.shardingsphere.core.util.DataSourceUtil",
+      "name": "sharding.jdbc.datasource",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.Object>>"
+    },
+    {
+      "sourceType": "io.shardingsphere.jdbc.spring.boot.SpringBootConfiguration",
+      "name": "sharding.jdbc.datasource.names",
+      "type": "java.lang.String"
+    }
+  ]
+}

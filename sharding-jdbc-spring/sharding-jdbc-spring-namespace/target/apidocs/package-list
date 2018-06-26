@@ -1,4 +1,0 @@
-io.shardingsphere.jdbc.spring.datasource
-io.shardingsphere.jdbc.spring.namespace.constants
-io.shardingsphere.jdbc.spring.namespace.handler
-io.shardingsphere.jdbc.spring.namespace.parser

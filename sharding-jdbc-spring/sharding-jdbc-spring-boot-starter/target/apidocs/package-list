@@ -1,4 +1,0 @@
-io.shardingsphere.jdbc.spring.boot
-io.shardingsphere.jdbc.spring.boot.masterslave
-io.shardingsphere.jdbc.spring.boot.sharding
-io.shardingsphere.jdbc.spring.boot.util
