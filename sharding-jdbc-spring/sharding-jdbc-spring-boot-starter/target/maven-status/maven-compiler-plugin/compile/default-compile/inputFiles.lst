@@ -1,0 +1,4 @@
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-boot-starter/src/main/java/io/shardingsphere/jdbc/spring/boot/SpringBootConfiguration.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-boot-starter/src/main/java/io/shardingsphere/jdbc/spring/boot/util/PropertyUtil.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-boot-starter/src/main/java/io/shardingsphere/jdbc/spring/boot/sharding/SpringBootShardingRuleConfigurationProperties.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-boot-starter/src/main/java/io/shardingsphere/jdbc/spring/boot/masterslave/SpringBootMasterSlaveRuleConfigurationProperties.java

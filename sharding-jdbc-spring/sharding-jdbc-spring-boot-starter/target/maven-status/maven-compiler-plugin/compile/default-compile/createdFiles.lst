@@ -1,0 +1,5 @@
+META-INF/spring-configuration-metadata.json
+io/shardingsphere/jdbc/spring/boot/sharding/SpringBootShardingRuleConfigurationProperties.class
+io/shardingsphere/jdbc/spring/boot/masterslave/SpringBootMasterSlaveRuleConfigurationProperties.class
+io/shardingsphere/jdbc/spring/boot/SpringBootConfiguration.class
+io/shardingsphere/jdbc/spring/boot/util/PropertyUtil.class

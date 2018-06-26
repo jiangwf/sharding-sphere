@@ -1,0 +1,11 @@
+io/shardingsphere/jdbc/spring/namespace/parser/ShardingStrategyBeanDefinition.class
+io/shardingsphere/jdbc/spring/datasource/SpringShardingDataSource.class
+io/shardingsphere/jdbc/spring/namespace/constants/ShardingDataSourceBeanDefinitionParserTag.class
+io/shardingsphere/jdbc/spring/namespace/parser/ShardingDataSourceBeanDefinitionParser.class
+io/shardingsphere/jdbc/spring/namespace/parser/ShardingStrategyBeanDefinitionParser.class
+io/shardingsphere/jdbc/spring/datasource/SpringMasterSlaveDataSource.class
+io/shardingsphere/jdbc/spring/namespace/handler/ShardingNamespaceHandler.class
+io/shardingsphere/jdbc/spring/namespace/constants/MasterSlaveDataSourceBeanDefinitionParserTag.class
+io/shardingsphere/jdbc/spring/namespace/handler/MasterSlaveNamespaceHandler.class
+io/shardingsphere/jdbc/spring/namespace/constants/ShardingStrategyBeanDefinitionParserTag.class
+io/shardingsphere/jdbc/spring/namespace/parser/MasterSlaveDataSourceBeanDefinitionParser.class

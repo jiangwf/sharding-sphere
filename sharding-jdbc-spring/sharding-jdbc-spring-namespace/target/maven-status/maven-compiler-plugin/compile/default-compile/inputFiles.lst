@@ -1,0 +1,11 @@
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/namespace/parser/ShardingDataSourceBeanDefinitionParser.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/namespace/parser/ShardingStrategyBeanDefinitionParser.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/datasource/SpringMasterSlaveDataSource.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/datasource/SpringShardingDataSource.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/namespace/constants/ShardingStrategyBeanDefinitionParserTag.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/namespace/parser/ShardingStrategyBeanDefinition.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/namespace/constants/ShardingDataSourceBeanDefinitionParserTag.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/namespace/constants/MasterSlaveDataSourceBeanDefinitionParserTag.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/namespace/handler/ShardingNamespaceHandler.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/namespace/handler/MasterSlaveNamespaceHandler.java
+/Users/jiangweifeng/opensourceproject/sharding-sphere/sharding-jdbc-spring/sharding-jdbc-spring-namespace/src/main/java/io/shardingsphere/jdbc/spring/namespace/parser/MasterSlaveDataSourceBeanDefinitionParser.java
