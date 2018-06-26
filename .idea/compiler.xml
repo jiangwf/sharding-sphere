@@ -11,7 +11,6 @@
         <module name="sharding-jdbc-spring-boot-starter" />
         <module name="sharding-jdbc-spring-namespace" />
         <module name="sharding-sql-test" />
-        <module name="sharding-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
