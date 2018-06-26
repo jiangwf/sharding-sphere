@@ -1,4 +1,4 @@
-/*
+package io.shardingsphere.core.metadata;/*
  * Copyright 2016-2018 shardingsphere.io.
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,8 +15,6 @@
  * </p>
  */
 
-package io.shardingsphere.core.metadata;
-
 import io.shardingsphere.core.exception.ShardingException;
 import io.shardingsphere.core.rule.DataNode;
 import io.shardingsphere.core.rule.ShardingDataSourceNames;
@@ -27,17 +25,14 @@ import lombok.Setter;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Abstract Sharding metadata.
  *
  * @author panjuan
  * @author zhaojun
+ * @author weifeng.jiang
  */
 @Getter
 @Setter
@@ -89,7 +84,7 @@ public abstract class ShardingMetaData {
             if (null == result) {
                 result = columnMetaDataList;
             }
-            if (!result.equals(columnMetaDataList)) {
+            if (!(result.size()==columnMetaDataList.size())) {
                 throw new ShardingException(getErrorMsgOfTableMetaData(logicTableName, result, columnMetaDataList));
             }
         }
