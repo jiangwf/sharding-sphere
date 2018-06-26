@@ -4,19 +4,10 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sharding-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sharding-jdbc" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sharding-jdbc-orchestration" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sharding-jdbc-orchestration-spring" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sharding-jdbc-orchestration-spring/sharding-jdbc-orchestration-spring-boot-starter" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sharding-jdbc-orchestration-spring/sharding-jdbc-orchestration-spring-namespace" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sharding-jdbc-spring" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sharding-jdbc-spring/sharding-jdbc-spring-boot-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sharding-jdbc-spring/sharding-jdbc-spring-namespace" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sharding-jdbc-transaction-parent" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sharding-jdbc-transaction-parent/sharding-jdbc-transaction" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sharding-jdbc-transaction-parent/sharding-jdbc-transaction-async-job" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sharding-jdbc-transaction-parent/sharding-jdbc-transaction-storage" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sharding-opentracing" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sharding-proxy" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sharding-sql-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-test" charset="UTF-8" />
   </component>
 </project>
