@@ -37,6 +37,7 @@ import java.util.Map;
  * 
  * @author zhangliang
  */
+//适配器模式继承实现
 public abstract class AbstractConnectionAdapter extends AbstractUnsupportedOperationConnection {
     
     private final Map<String, Connection> cachedConnections = new HashMap<>();
