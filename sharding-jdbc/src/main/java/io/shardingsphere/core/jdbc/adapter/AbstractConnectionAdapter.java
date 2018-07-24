@@ -31,6 +31,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Adapter for {@code Connection}.
@@ -40,7 +41,7 @@ import java.util.Map;
 //适配器模式继承实现
 public abstract class AbstractConnectionAdapter extends AbstractUnsupportedOperationConnection {
     
-    private final Map<String, Connection> cachedConnections = new HashMap<>();
+    private final Map<String, Connection> cachedConnections = new ConcurrentHashMap<>();
     
     private boolean autoCommit = true;
     
@@ -48,7 +49,7 @@ public abstract class AbstractConnectionAdapter extends AbstractUnsupportedOpera
     
     private boolean closed;
     
-    private int transactionIsolation = TRANSACTION_READ_UNCOMMITTED;
+    private int transactionIsolation = TRANSACTION_READ_COMMITTED;
     
     /**
      * Get database connection.
