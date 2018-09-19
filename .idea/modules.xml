@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/sharding-jdbc-spring/sharding-jdbc-spring-namespace/sharding-jdbc-spring-namespace.iml" filepath="$PROJECT_DIR$/sharding-jdbc-spring/sharding-jdbc-spring-namespace/sharding-jdbc-spring-namespace.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharding-sphere.iml" filepath="$PROJECT_DIR$/sharding-sphere.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharding-sql-test/sharding-sql-test.iml" filepath="$PROJECT_DIR$/sharding-sql-test/sharding-sql-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharding-transaction/sharding-transaction.iml" filepath="$PROJECT_DIR$/sharding-transaction/sharding-transaction.iml" />
     </modules>
   </component>
 </project>
