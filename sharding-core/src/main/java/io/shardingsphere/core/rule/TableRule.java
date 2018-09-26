@@ -120,6 +120,15 @@ public final class TableRule {
         }
         return result;
     }
+
+    /**
+     * 获取物理的dataNode节点
+     * add by weifeng.jiang
+     * @return
+     */
+    public List<DataNode> getActualTables(){
+        return actualDataNodes;
+    }
     
     int findActualTableIndex(final String dataSourceName, final String actualTableName) {
         int result = 0;
