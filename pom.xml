@@ -11,7 +11,6 @@
         <module>sharding-jdbc</module>
         <module>sharding-jdbc-spring</module>
         <module>sharding-sql-test</module>
-        <module>sharding-transaction</module>
     </modules>
     
     <properties>

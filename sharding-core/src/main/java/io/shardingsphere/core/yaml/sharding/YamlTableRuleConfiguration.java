@@ -21,16 +21,21 @@ import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
 import io.shardingsphere.core.api.config.TableRuleConfiguration;
 import io.shardingsphere.core.keygen.KeyGeneratorFactory;
+import io.shardingsphere.core.yaml.parser.DynamicType;
+import io.shardingsphere.core.yaml.parser.TableRuleParser;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Yaml table rule configuration.
  *
  * @author caohao
+ * @author he.tian
  */
 @Getter
 @Setter
+@Slf4j
 public class YamlTableRuleConfiguration {
     
     private String logicTable;
@@ -46,7 +51,11 @@ public class YamlTableRuleConfiguration {
     private String keyGeneratorClassName;
     
     private String logicIndex;
-    
+
+    private boolean dynamic = false;
+
+    private String dynamicType = DynamicType.MONTH.toString();
+
     /**
      * Build table rule configuration.
      *
@@ -56,7 +65,18 @@ public class YamlTableRuleConfiguration {
         Preconditions.checkNotNull(logicTable, "Logic table cannot be null.");
         TableRuleConfiguration result = new TableRuleConfiguration();
         result.setLogicTable(logicTable);
-        result.setActualDataNodes(actualDataNodes);
+        if(dynamic){
+            //分片信息动态配置解析
+            try {
+                result.setActualDataNodes(TableRuleParser.getActualDataNodesParse(dynamicType,actualDataNodes));
+                log.info("ss扩展 动态配置 actualDataNodes={}",actualDataNodes);
+            } catch (Exception e) {
+                log.error("ss扩展 动态配置 actualData解析异常",e);
+                throw new IllegalArgumentException("ss扩展 actualData解析异常");
+            }
+        }else{
+            result.setActualDataNodes(actualDataNodes);
+        }
         if (null != databaseStrategy) {
             result.setDatabaseShardingStrategyConfig(databaseStrategy.build());
         }
