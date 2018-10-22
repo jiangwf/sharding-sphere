@@ -59,6 +59,8 @@ public class YamlShardingRuleConfiguration {
     private Map<String, Object> configMap = new LinkedHashMap<>();
     
     private Properties props = new Properties();
+
+    private String tableShardingEnd;
     
     /**
      * Get sharding rule configuration.
@@ -71,6 +73,7 @@ public class YamlShardingRuleConfiguration {
         for (Entry<String, YamlTableRuleConfiguration> entry : tables.entrySet()) {
             YamlTableRuleConfiguration tableRuleConfig = entry.getValue();
             tableRuleConfig.setLogicTable(entry.getKey());
+            tableRuleConfig.setTableShardingEnd(tableShardingEnd);
             result.getTableRuleConfigs().add(tableRuleConfig.build());
         }
         result.getBindingTableGroups().addAll(bindingTables);

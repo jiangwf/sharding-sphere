@@ -21,26 +21,28 @@ public abstract class DateUtil {
     /**
      * a list of months between the specified time and the current time
      * @param startMonth start month
+     * @param endMonth end month
      * @return a list of months between the specified time and the current time
      */
-    public static List<String> getMonthListFromStartToNow(String startMonth){
+    public static List<String> getMonthListFromStartToNow(String startMonth,String endMonth){
 
         List<String> monthList = new ArrayList<>();
 
-        if(StringUtils.isEmpty(startMonth)){
+        if(StringUtils.isEmpty(startMonth) || StringUtils.isEmpty(endMonth)){
             log.info("ss扩展 分片规则开始月份为空");
             return monthList;
         }
         try {
-            Date startMonthDate = new SimpleDateFormat("yyyyMM").parse(startMonth);
-            Date now = new Date();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMM");
+            Date startMonthDate = dateFormat.parse(startMonth);
+            Date endMonthDate = dateFormat.parse(endMonth);
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(startMonthDate);
-            for (;calendar.getTime().before(now);){
-                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMM");
-                monthList.add(simpleDateFormat.format(calendar.getTime()));
+            for (;calendar.getTime().before(endMonthDate);){
+                monthList.add(dateFormat.format(calendar.getTime()));
                 calendar.add(Calendar.MONTH,1);
             }
+            monthList.add(dateFormat.format(calendar.getTime()));
         } catch (ParseException e) {
             log.error("ss扩展 分片规则开始月份格式化异常");
         }
