@@ -20,7 +20,7 @@
 
 ## 基于sharding-sphere 3.0.0.M1 定制化扩展
 
-* 进行中 分片自动扩容
+* 已完成 分片自动扩容，目前支持按月份动态分表配置扩容 add by weifeng.jiang
 * 进行中 基于xa事务强一致性支持
 
 ## Overview
