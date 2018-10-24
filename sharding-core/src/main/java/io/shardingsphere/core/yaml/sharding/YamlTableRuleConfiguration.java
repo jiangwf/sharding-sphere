@@ -56,8 +56,6 @@ public class YamlTableRuleConfiguration {
 
     private String dynamicType = DynamicType.MONTH.toString();
 
-    private String tableShardingStart;
-
     private String tableShardingEnd;
 
     /**
@@ -72,7 +70,7 @@ public class YamlTableRuleConfiguration {
         if(dynamic){
             //分片信息动态配置解析
             try {
-                result.setActualDataNodes(TableRuleParser.getActualDataNodesParse(dynamicType,actualDataNodes,tableShardingStart,tableShardingEnd));
+                result.setActualDataNodes(TableRuleParser.getActualDataNodesParse(dynamicType,actualDataNodes,logicTable,tableShardingEnd));
                 log.info("ss扩展 动态配置 actualDataNodes={}",actualDataNodes);
             } catch (Exception e) {
                 log.error("ss扩展 动态配置 actualData解析异常",e);

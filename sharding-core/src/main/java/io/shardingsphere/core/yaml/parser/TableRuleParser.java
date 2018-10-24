@@ -19,11 +19,11 @@ public class TableRuleParser {
      * the set of execution cell nodes after parsing
      * @param dynamicType dynamic type
      * @param actualDataNodes the actual execution of the cell node list before the rule is parsed
-     * @param tableShardingStart The start month of the split-month configuration
+     * @param logicTable logic table
      * @param tableShardingEnd The end month of the split-month configuration
      * @return the set of execution cell nodes after parsing
      */
-    public static String getActualDataNodesParse(String dynamicType,String actualDataNodes,String tableShardingStart,String tableShardingEnd){
+    public static String getActualDataNodesParse(String dynamicType,String actualDataNodes,String logicTable,String tableShardingEnd){
         if(DynamicType.MONTH.toString().equals(dynamicType)){
             if(StringUtils.isEmpty(actualDataNodes) || StringUtils.isEmpty(dynamicType)){
                 throw new IllegalArgumentException("ss扩展 动态配置 表规则配置是否动态flag为空或actualDataNodes为空");
@@ -33,8 +33,8 @@ public class TableRuleParser {
 
             String[] actualDataNodeArr = actualDataNodes.split(",");
             for (String actualDataNode : actualDataNodeArr) {
-                actualDataNodeKeyMap.put(actualDataNode,actualDataNode);
-                actualDataNodeValueMap.put(actualDataNode,tableShardingStart);
+                actualDataNodeKeyMap.put(actualDataNode,(actualDataNode.substring(0,actualDataNode.indexOf("."))+"."+logicTable));
+                actualDataNodeValueMap.put(actualDataNode,actualDataNode.substring(actualDataNode.indexOf(".")+1,actualDataNode.length()));
             }
 
             return getActualDataNodeBeforeList(actualDataNodeKeyMap,actualDataNodeValueMap,tableShardingEnd);
