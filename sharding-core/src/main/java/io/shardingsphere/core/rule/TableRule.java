@@ -25,6 +25,7 @@ import io.shardingsphere.core.routing.strategy.ShardingStrategy;
 import io.shardingsphere.core.routing.strategy.ShardingStrategyFactory;
 import io.shardingsphere.core.util.InlineExpressionParser;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import java.util.Collection;
@@ -42,8 +43,9 @@ import java.util.List;
 public final class TableRule {
     
     private final String logicTable;
-    
-    private final List<DataNode> actualDataNodes;
+
+    @Setter
+    private List<DataNode> actualDataNodes;
     
     private final ShardingStrategy databaseShardingStrategy;
     
